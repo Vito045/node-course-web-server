@@ -32,6 +32,12 @@ app.get('/', (req, res) => {
         page: 'Home'
     });
 });
+app.get('/rotate', (req, res) => {
+    res.render('rotating.hbs', {
+        pageTitle: 'Rotate page',
+        page: 'Rotating'
+    });
+});
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
